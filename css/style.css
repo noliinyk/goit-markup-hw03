@@ -17,8 +17,8 @@
   }
 
   .container {
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: auto;
+    margin-right: auto;
     width: 1200px;
     padding-left: 15px;
     padding-right: 15px;
@@ -31,6 +31,7 @@
     padding-top: 94px;
     padding-bottom: 94px;
   }
+  
   h1,h2,h3,p {
       margin: 0;
   }
@@ -50,7 +51,7 @@
 /* верняя линия */
 /*Лого*/
 .header{
-    border-bottom-width: 1px;
+ border-bottom-width: 1px;
   border-bottom-style: solid;
   border-bottom-color: var(--primary-text-color);
 }
@@ -145,7 +146,13 @@
 }
  /*Шапка */
  .hero .container{
-    background-color: #2F303A;
+    
+    text-align: center;
+ }
+ .hero{
+     padding-top: 200px;
+     padding-bottom: 200px;
+     background-color: #2F303A;
  }
 
 .hero-text {
@@ -181,14 +188,13 @@ text-align: center;
 letter-spacing: 0.06em;
 color: var(--primary-white-color);
 }
+
 .hero-button:hover, 
 .hero-button:focus{
     cursor: pointer;
-    /*color: */
 }
-.hero .container{
-text-align: center;
-}
+
+
 /* Особенности */
 
 .features-item,
@@ -219,6 +225,9 @@ margin-left: 30px;
 }
 
 /* Чем мы занимаемся */
+.business{
+    padding-top: 0;
+    }
 
 .business-title{
 font-weight: 700;
@@ -271,6 +280,10 @@ margin-bottom: 50px;
 .team-item{
     display: flex;
 }
+.team-description{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
 
 .team-item .list + .list{
     margin-left: 30px;
@@ -296,13 +309,14 @@ margin-top: 0;
 
 /* Футер */
 
-.footer .container{
-    background-color: #2F303A;
-}
+
 
 .footer{
     line-height: 1.71;
-    color: var(--primary-white-color)
+    color: var(--primary-white-color);
+    background-color: #2F303A;
+    padding-top: 60px;
+    padding-bottom: 60px;
 }
 .address-link{
     font-style: normal;
@@ -344,10 +358,6 @@ color: var(--primary-white-color);
     text-decoration: none;
 }
 
-.footer .container{
-padding-top: 60px;
-padding-bottom: 60px;
-}
 
 /* Порфолио */
 /* Фильтры */
@@ -381,7 +391,7 @@ text-align: center;
 }
 /* Портфолио работ */
 
-.filter-title .container{
+.filter-title {
       
     padding-bottom: 50px ;
 }
@@ -434,7 +444,7 @@ text-align: center;
 .portfolio-content{
 background: var(--primary-white-color);
 box-sizing: border-box;
-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+
 
   border-right-width: 1px;
   border-right-style: solid;
